@@ -14,7 +14,7 @@ console.log (resultado);
 
 // Vamos a concatenar texto
 var textoA = 'Harry';
-var textoB = 'Potter';
+var textoB = 'Potter'; 
 
 console.log (textoA + textoB);
 
@@ -22,7 +22,7 @@ console.log (textoA + textoB);
 // console.log(textoA + ' ' + textoB); comillas invertidas alt96
 
 // consoleamos textoA + numeroA y nos devuelve Harry15
-// console.log(textoA + numeroA);
+console.log(textoA + numeroA);
 
 // * Tipos de datos en Js
 /*
@@ -101,21 +101,21 @@ let numeritoUno = 10;
 let numeritoDos = 5;
 
 // suma
-// console.log(numeritoUno + numeritoDos);
+console.log(numeritoUno + numeritoDos);
 // restar
-// console.log(numeritoUno - numeritoDos);
+console.log(numeritoUno - numeritoDos);
 // multiplicar
-// console.log(numeritoUno * numeritoDos);
+console.log(numeritoUno * numeritoDos);
 // Division
-// console.log(numeritoUno / numeritoDos);
+console.log(numeritoUno / numeritoDos);
 // modulo
-// console.log(numeritoUno % numeritoDos);
+console.log(numeritoUno % numeritoDos);
 // incrementar, le incrementamos 1 y despues lo consoleamos
-// numeritoUno++;
-// console.log(numeritoUno);
+numeritoUno++;
+console.log(numeritoUno);
 // decrementar, le decrementamos 1 y despues consoleamos
-// numeritoDos--;
-// console.log(numeritoDos);
+numeritoDos--;
+console.log(numeritoDos);
 
 // * Operadores de comparacion
 /*
@@ -132,9 +132,9 @@ let numeritoDos = 5;
 || = o - or
 */
 
-// console.log(5 == 5); devuelve true
-// console.log(5 == '5'); devuelve true
-// console.log(5 === '5'); devuelve false
+//console.log(5 == 5); devuelve true
+//console.log(5 == '5'); devuelve true
+//console.log(5 === '5'); devuelve false
 
 // Como sabemos que tipo de dato estamos manejando?
 // Podemos usar typeof
