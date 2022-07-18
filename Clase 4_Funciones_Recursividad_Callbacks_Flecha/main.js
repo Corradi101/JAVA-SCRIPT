@@ -77,7 +77,7 @@ let hola = () => {} //asi se escribe la funcion de arriba con funcion flecha
 */
 
 // Si vamos a tener un parametro con una expresion no necesitamos return
-
+//Ejemplo
 // (parametro) => expresion;
 let hola = (parametro) => 'hola';
 
@@ -127,9 +127,10 @@ pepe('Maxi');
 // Primero ejemplo con un for
 let i = 0;
 
-for (let i = 4; i > 0; i--) {
+for (let i = 5; i > 0; i--) {
 console.log(i);
 }
+
 
 // Hagamoslo con la funcion recursiva
 
@@ -167,7 +168,6 @@ const duplicar = (num) => {
   num = num + num;
   // Lo pinta
   console.log(num);
-
   // Caso base
   if (num > 50) {
     return console.log('Te pasaste ');
@@ -177,24 +177,23 @@ const duplicar = (num) => {
   return duplicar(num);
 };
 
-
 duplicar(5);
 
 // Callback
 
 // Un callback es una funcion que se pasa como argumento a otra funcion
-/*
+
 const alertHola = (nombre) => {
   return alert(`Hola ${nombre}`);
 };
 
-alertHola('Nelson');
+alertHola('Maxi');
 
 const consoleHola = (nombre) => {
   return console.log(`Hola ${nombre}`);
 };
 
-consoleHola('Nelson');
+consoleHola('Corradi');
 
 const procesarEntrada = (callback) => {
   const nombre = prompt('Por favor ingresa tu nombre');
@@ -204,11 +203,12 @@ const procesarEntrada = (callback) => {
 
 procesarEntrada(alertHola);
 
-const saludar = (nombre) => {
+
+const saludar10 = (nombre) => {
   console.log(`Hola ${nombre}`);
 };
 
-saludar('asd');
+saludar10('Corradi');
 
 const procesarSaludo = (funcion) => {
   const nombre = prompt('pone tu nombre');
@@ -225,4 +225,3 @@ const names = ['Pepe', 'pepito', 'pepita'];
 names.forEach((pepe) => {
 console.log(pepe);
 });
-*/
