@@ -13,6 +13,7 @@ console.log('Hola, soy una funcion');
 
 saludar();
 
+
 /* Otro ejemplo con parametros
 Sintaxis de funcion con parametros
 function nombreDeLaFuncion(parametro){
@@ -44,6 +45,7 @@ function descripcionPersonal(nombre, edad, carrera = 'nada') {
 descripcionPersonal('Pepito', 28, 'frontend');
 descripcionPersonal('Pepito2', 19);
 descripcionPersonal("Leo", 35, 'Futbolista');
+
 
 // Return
 
@@ -106,6 +108,7 @@ console.log(`El numero que estamos iterando es ${i}`);
 for (let pepito = 1; pepito <= 10; pepito++) {
 console.log(`El numero actual de pepito es: ${pepito}`);
 }
+
 
 // Break
 
