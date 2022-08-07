@@ -11,18 +11,18 @@ const procesarEntradaUsuario = (callback) => {
 //procesarEntradaUsuario(saludar);
 
 
-// repeat(n)
+// Repeat(n)
 // Es un método de los strings que permite repetirlo n veces sin necesidad de escribir todo el código manualmente.
 const nombre = 'Maxi';
-console.log(nombre.repeat(5)); 
+console.log(nombre.repeat(5));
 
 
-// chartAt()
+// ChartAt()
 // Devuelve el caracter en el index(indice) que el especifiquemos
 console.log(nombre.charAt(0)); // Devuelve la M de Maxi
 
 
-// concact()
+// Concact()
 // Nos permite concatenar dos o mas arrays/strings
 
 const nombre1 = 'Maxi, ';
@@ -67,20 +67,20 @@ console.log(arrayFiltrandoPalabras); // Devuelve (2) ['Uruguay', 'Paraguay']
 console.log(arrayPalabras); // Devuelve (5) ['Argentina', 'Brasil', 'Bariloche', 'Uruguay', 'Paraguay']
 
 
-// find()
+// Find()
 // Devuelve el valor del primer elemento del array que cumpla con la condicion que le pasamos
 const array1 = [1, 2, 3, 4, 5, 6];
 const find = array1.find((item) => item > 5); //devuelve el numero 6
 console.log(find);
 
 
-// forEach()
+// ForEach()
 // El metodo forEach ejecuta la funcion indicada por cada elemento del array
 const arrayNumeros = [1, 2, 3, 4, 5, 6];
 
 arrayNumeros.forEach((item) => console.log(item)); // Devuelve  del 1 al 6
 arrayNumeros.forEach((item) => {
-console.log(`Estamos recorriendo el numero ${item}`); 
+  console.log(`Estamos recorriendo el numero ${item}`);
 });
 
 
