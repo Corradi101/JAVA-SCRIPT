@@ -6,7 +6,7 @@ return x * otroNumero;
   };
 };
 
-//console.log(multiplicarPor(5)); // que me devuelve? Una funcion
+console.log(multiplicarPor(5)); // que me devuelve? Una funcion
 
 const unaVariable = multiplicarPor(5);
 
@@ -22,6 +22,10 @@ console.log(multiplicarPorCinco(50)); // devuelve 250
 
 
 // Objetos
+/*
+En Programación y JS, un objeto es una colección de datos relacionados y/o funcionalidad, que generalmente consta de variables y funciones, denominadas propiedades y métodos cuando están dentro de objetos.
+EJ: una taza es un objeto con propiedades. Tiene un color, un diseño, un peso, etc.
+*/
 
 //   Objeto literal
 //   let auto = {
@@ -46,6 +50,7 @@ console.log(array);
 // Como accedo a un valor de un objeto?
 console.log(auto);
 console.log(auto.marca);
+console.log(auto.combustible);
 
 
 // Ejemplito de array + objetos
@@ -110,15 +115,15 @@ class AutoEjmplo {
 
 
 let Auto3= new Auto('Fiat', 'Uno', 2002, true);
-//console.log(Auto3.arrancar()); Por algo me tira error, deberia devolver arranco
+//console.log(Auto3.arrancar()); //Por algo me tira error, deberia devolver arranco
 
-let auto4 = new Auto('Audi', 'a3', 2010, false);
+let Auto4 = new Auto('Audi', 'a3', 2010, false);
 //console.log(auto4.arrancar()); // Por algo me tira error, deberia devolver arranco
 
 
-//console.log(auto4.arrancar());
-//console.log(auto3.getMarca()); // Lo estamos devolviendo con el Metodo
-//console.log(auto3.marca); // Devolvemos la marca pero como Propiedad
+//console.log(Auto4.arrancar());
+//console.log(Auto3.getMarca()); // Lo estamos devolviendo con el Metodo
+//console.log(Auto3.marca); // Devolvemos la marca pero como Propiedad
 
 
 // Resumen:
@@ -159,7 +164,7 @@ let robot1 = new Robot('Azul', 20, 40);
 let robot2 = new Robot('Rojo', 10, 50);
 
 // Mostramos el robot en la consola
-console.log(robot1);
+//console.log(robot1);
 
 // Llamemos al metodo posicion que nos devuelve en donde esta parado el robot
 robot1.posicion();
@@ -197,7 +202,7 @@ class Persona {
     };
   }
   saludar = () => {
-    console.log(
+      console.log(
       `Hola soy ${this.nombre}, tengo ${
         this.edad
       } y mi contraseña es ${this.getPass()}`
@@ -211,7 +216,7 @@ console.log(Name.edad);
 console.log(Name.nombre);
 
 // Que pasa si quiero acceder a la pass? undefined
-console.log(Name.pass);
+//console.log(Name.pass);
 
 // Accedamos a la pass con el metodo a ver que onda
 console.log(Name.getPass());

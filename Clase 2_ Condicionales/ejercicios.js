@@ -15,6 +15,7 @@ const palabrasConM = (palabras) => {
 
 palabrasConM(arrayPalabras);
 
+
 //Ejercicio 2
 
 const arrayNumeros = [1, 2, 6, 8, 15, 19, 20, 25, 26];
@@ -31,6 +32,7 @@ const numerosEnIntervalo = (num1, num2, numeros) => {
 };
 
 numerosEnIntervalo(4, 15, arrayNumeros);
+
 
 //Ejerciocio 3
 
@@ -50,6 +52,7 @@ const multiplicarMayoresA = (limite, multiplicador, numeros) => {
 };
 
 multiplicarMayoresA(4, 10, arrayNumeros);
+
 
 //Ejercicio4
 
@@ -72,6 +75,7 @@ const buscarNumeroAlt = (numeros, numeroLimite) => {
 
 console.log(buscarNumero(arrayNumeros, 3));
 
+
 //Ejerciocio 5
 
 const arrayPalabraS = ["hola", "bienvenidos", "a", "la", "Nucbanetta"];
@@ -93,6 +97,7 @@ const buscarPalabraSAlt = (palabras) => {
 
 console.log(buscarPalabraS(arrayPalabraS));
 
+
 //Ejercicio 6
 
 const arrayNumerosSS = [2, 4, 6, 8, 10, 12, 14];
@@ -112,6 +117,7 @@ console.log(duplicados(arrayNumerosSS));
   20, 24, 28
 ]
 */
+
 
 //Ejerciocio 7
 
@@ -134,6 +140,7 @@ const tablaDelConFlecha = (numero) => {
     );
   }
 };
+
 
 //Ejercicio 8
 
@@ -160,6 +167,7 @@ const arrayPeliculas = [];
 arrayPeliculas.push(pokemon, avengers, starWars, batman, wonderWoman);
 
 console.log(arrayPeliculas);
+
 
 //Ejercicio 9
 /*
@@ -201,6 +209,7 @@ const ordenarPorAño = () => {
 
 ordenarPorAño();
 */
+
 
 // Ejercicio 10
 /*
@@ -245,6 +254,7 @@ const ordenarPorDuracion = () => {
 ordenarPorDuracion();
 */
 
+
 // Ejercicio 11
 /*
 class Pelicula {
@@ -281,6 +291,7 @@ const pelisLargasAlt = (peliculas) => {
 console.log(pelisLargas(arrayPeliculas));
 */
 
+
 // Ejercicio 12
 /*
 class Pelicula {
@@ -307,6 +318,7 @@ arrayPeliculas.push(pokemon, avengers, starWars, batman, wonderWoman);
 
 console.log(arrayPeliculas);
 */
+
 
 // Ejercicio 13
 /*

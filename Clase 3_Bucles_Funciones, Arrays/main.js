@@ -8,7 +8,7 @@ identificador();
 */
 
 function saludar() {
-console.log('Hola, soy una funcion');
+  console.log('Hola, soy una funcion');
 }
 
 saludar();
@@ -31,7 +31,7 @@ saludoPersonal('Pepito');
 
 // Funcion con mulitples parametros
 function descripcionPersonal(nombre, edad) {
-console.log(`Hola ${nombre}, tengo ${edad} años`);
+  console.log(`Hola ${nombre}, tengo ${edad} años`);
 }
 // Ejecutamos
 descripcionPersonal('Pepito');
@@ -87,8 +87,8 @@ console.log(nuevoArray.length); // Esto devuelve 7
 
 //  Volvamos al for
 
-for (let i = 0; i< nuevoArray.length; i++) {
-console.log(nuevoArray[i]);
+for (let i = 0; i < nuevoArray.length; i++) {
+  console.log(nuevoArray[i]);
 }
 
 // Analicemos lo sucedido
@@ -102,40 +102,40 @@ console.log(nuevoArray[i]);
 */
 
 for (let i = 0; i < 10; i++) {
-console.log(`El numero que estamos iterando es ${i}`);
+  console.log(`El numero que estamos iterando es ${i}`);
 }
 
 for (let pepito = 1; pepito <= 10; pepito++) {
-console.log(`El numero actual de pepito es: ${pepito}`);
+  console.log(`El numero actual de pepito es: ${pepito}`);
 }
 
 
 // Break
 
 for (a = 0; a < 10; a++) {
-if (a === 4) {
-break;
-}
-console.log(`break del 0 al 3 ${a}`);
+  if (a === 4) {
+    break;
+  }
+  console.log(`break del 0 al 3 ${a}`);
 }
 
 
 // Continue
 
 for (e = 0; e < 10; e++) {
-if (e === 3) {
-continue;
-}
-console.log(`Continue del 0 al 9 ${e}`);
+  if (e === 3) {
+    continue;
+  }
+  console.log(`Continue del 0 al 9 ${e}`);
 }
 
 // Hacer un bucle que imprima solamente los numeros pares
 
 for (let i = 1; i <= 20; i++) {
-if (i % 2 !== 0) {
-continue;
-}
-console.log(`El numero ${i} es par`);
+  if (i % 2 !== 0) {
+    continue;
+  }
+  console.log(`El numero ${i} es par`);
 }
 
 
@@ -149,8 +149,8 @@ Actualizar
 let o = 0;
 
 while (o < 10) {
-console.log(`De o del 0 al 9 ${o}`);
-o++;
+  console.log(`De o del 0 al 9 ${o}`);
+  o++;
 }
 
 // Do while
@@ -160,8 +160,8 @@ o++;
 let i = 10;
 
 do {
-console.log(`El numero iterado de do es ${i}`);
-i++;
+  console.log(`El numero iterado de do es ${i}`);
+  i++;
 } while (i < 10);
 
 let array = ['Hola', 20, 'Nucba'];

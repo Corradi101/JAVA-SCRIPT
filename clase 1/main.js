@@ -50,6 +50,7 @@ nombre = 'Pepito';
 
 console.log(nombre);
 
+
 // Var let const
 
 // Var lo podemos volver a declarar con el mismo nombre y asignar un nuevo valor
@@ -60,6 +61,7 @@ console.log(tipoVar);
 var tipoVar = 'hola soy un var redeclarado';
 
 console.log(tipoVar);
+
 
 // Let
 let tipoLet = 'Hola soy let';
@@ -73,9 +75,10 @@ console.log(tipoLet);
 
 // !Ejemplo
 const nombreConst = 'Nelson';
-let edad = 27;
+let edad = 35;
 
 console.log (edad);
+
 
 // Const
 const tipoConst = 'Hola soy const';
@@ -84,6 +87,7 @@ const tipoConst = 'Hola soy const';
 // * No podemos reasignar su valor
 // tipoConst = 'Hola, no podemos reasiganar su valor';
 // console.log(tipoConst);
+
 
 // * Operadores
 /*
@@ -132,16 +136,17 @@ console.log(numeritoDos);
 || = o - or
 */
 
-//console.log(5 == 5); devuelve true
-//console.log(5 == '5'); devuelve true
-//console.log(5 === '5'); devuelve false
+console.log(5 == 5); // devuelve true
+console.log(5 == '5'); // devuelve true
+console.log(5 === '5'); // devuelve false
+console.log(5 !== 5); // devuelve false
 
 // Como sabemos que tipo de dato estamos manejando?
 // Podemos usar typeof
-// console.log(typeof 5);
-// console.log(typeof '5');
-// console.log(typeof true);
-// console.log(typeof 5.3);
+console.log(typeof 5); //number
+console.log(typeof '5'); //string
+console.log(typeof true); //boolean
+console.log(typeof 5.3); //number 
 
 // Prompt
 // prompt('Hola, como te llamas?') // Abre el cuadro de dialogo que nos pide un dato

@@ -173,6 +173,5 @@ hacerOperación(4, 2, dividir);
 */
 
 
-// Ejercicio N 7
 
 
