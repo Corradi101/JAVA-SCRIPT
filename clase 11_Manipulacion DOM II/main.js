@@ -103,3 +103,9 @@ const init = () => {
 };
 
 init();
+
+/*
+const addTask = e => {
+  e.preventDefault(); 
+}; // Cancela un evento si este es cancelable. Como recargar la Pag
+*/

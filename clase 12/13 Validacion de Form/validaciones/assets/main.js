@@ -9,14 +9,14 @@ const phoneInput = document.getElementById('phone');
 const checkUsername = () => {
   // Input valido por defecto = false
   let valid = false;
-  //   Guardamos en dos variables el minimo y el maximo de caracteres para el nombre de usuario
+  //   Guardamos en dos variables el mínimo y el máximo de caracteres para el nombre de usuario
   const min = 3;
   const max = 25;
 
   // Gurdamos el valor del input en una variable
   const username = nameInput.value.trim();
 
-  // Si el camo esta vacio mostranos un error, llamando a la funcion showError
+  // Si el camo esta vacio mostranos un error, llamando a la función showError
   if (!isEmpty(username)) {
     showError(nameInput, 'El nombre es obligatorio');
   } else if (!isBetween(username.length, min, max)) {
@@ -31,6 +31,12 @@ const checkUsername = () => {
 
   return valid;
 };
+
+
+
+
+
+
 
 // Checkear el email
 const checkEmail = () => {
@@ -61,7 +67,7 @@ const checkPassword = () => {
   } else if (!isPassSecure(password)) {
     showError(
       passInput,
-      'La contraseña debe tener al menos 8 caracteres, una mayuscula, una minuscula y un simbolo'
+      'La contraseña debe tener al menos 8 caracteres, una mayúscula, una minúscula y un símbolo'
     );
   } else {
     showSuccess(passInput);
@@ -71,12 +77,21 @@ const checkPassword = () => {
   return valid;
 };
 
-// Checkear el telefono
+
+
+
+
+
+
+
+
+
+// Checkear el teléfono
 const checkPhone = () => {
   let valid = false;
   const phoneValue = phoneInput.value.trim();
   if (!isPhoneValid(phoneValue)) {
-    showError(phoneInput, 'El telefono no es valido');
+    showError(phoneInput, 'El teléfono no es válido');
   } else {
     showSuccess(phoneInput);
     valid = true;
@@ -85,11 +100,11 @@ const checkPhone = () => {
   return valid;
 };
 
-// Funcion para verificar si se requiere un campo
-// Esta funcion nos va a devolver true si el campo esta vacio
+// Función para verificar si se requiere un campo
+// Esta función nos va a devolver true si el campo esta vacío
 const isEmpty = value => (value === '' ? false : true);
 
-// Funcion para verificar si la longitud del campo esta dentro de un minimo y un maximo
+// Funcion para verificar si la longitud del campo esta dentro de un mínimo y un máximo
 const isBetween = (length, min, max) =>
   length < min || length > max ? false : true;
 
@@ -100,21 +115,21 @@ const isEmailValid = email => {
   return re.test(email);
 };
 
-// Checkear que la contraseña tenga 8 caracteres, minuscula, mayuscula y un simbolo
+// Checkear que la contraseña tenga 8 caracteres, minúscula, mayúscula y un símbolo
 const isPassSecure = pass => {
   const re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,}$/;
-  //   testeamos
+  //   Testeamos
   return re.test(pass);
 };
 
-// Checkeamos si el telefono ingresado es valido (10 numeros)
+// Checkeamos si el teléfono ingresado es válido (10 numeros)
 const isPhoneValid = phone => {
   const re = /^[0-9]{10}$/;
-  // testeamos
+  // Testeamos
   return re.test(phone);
 };
 
-// Funcion para mostrar un error
+// Función para mostrar un error
 // Recibir el input y el mensaje de error
 const showError = (input, message) => {
   const formField = input.parentElement;
@@ -124,7 +139,7 @@ const showError = (input, message) => {
   error.textContent = message;
 };
 
-// Funcion para mostrar exito
+// Función para mostrar éxito
 // Recibe el input
 const showSuccess = input => {
   const formField = input.parentElement;
@@ -151,18 +166,18 @@ form.addEventListener('submit', e => {
   let isFormValid =
     isUsernameValid && isEmailValid && isPasswordValid && isPhoneValid;
 
-  // Si todos los campos son validos, "Enviamos" el formulario
+  // Si todos los campos son válidos, "Enviamos" el formulario
   if (isFormValid) {
     alert('Exito');
     form.submit();
   }
 });
 
-// Las funciones de rebote (debounce) no se ejecutan al momento de su invocacion. En lugar de esto, lo que hace es retrasar su ejecucion por un periodo de tiempo predeterminado. Si la misma funcion se invoca de nuevo, la ejecucion previa se cancela y el tiempo de espera se reinicia.
+// Las funciones de rebote (debounce) no se ejecutan al momento de su invocación. En lugar de esto, lo que hace es retrasar su ejecución por un periodo de tiempo predeterminado. Si la misma función se invoca de nuevo, la ejecución previa se cancela y el tiempo de espera se reinicia.
 
-// Esta funcion recibe dos parametros: una funcion (callback) y un tiempo de delay (500ms)
+// Esta función recibe dos parámetros: una función (callback) y un tiempo de delay (500ms)
 
-// El primer parametro es la funcion que queremos ejecutar despues de un timpo y el segundo es el tiempo que tiene que esperar antes de ejecutarla
+// El primer parámetro es la función que queremos ejecutar después de un tiempo y el segundo es el tiempo que tiene que esperar antes de ejecutarla
 
 const debounce = (fn, delay = 500) => {
   let timeoutId;
@@ -198,3 +213,8 @@ form.addEventListener(
     }
   })
 );
+
+
+
+
+
